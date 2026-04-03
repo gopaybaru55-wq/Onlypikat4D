@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PIKAT4D CEK LINK</title>
+  <meta name="description" content="PIKAT4D CEK LINK - Cek status domain atau URL apakah aman, terblokir, atau error." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-glow glow-1"></div>
+  <div class="background-glow glow-2"></div>
+
+  <header class="hero">
+    <div class="container">
+      <div class="hero-badge">LIVE DOMAIN STATUS CHECKER</div>
+      <h1>PIKAT4D CEK LINK</h1>
+      <p class="hero-subtitle">
+        Cek status domain atau URL secara cepat untuk mengetahui apakah link dapat diakses,
+        terindikasi bermasalah, atau mengalami error.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card checker-card">
+      <div class="card-header">
+        <h2>Cek Status Link</h2>
+        <p>Masukkan maksimal 5 domain / URL, satu per baris.</p>
+      </div>
+
+      <div class="form-group">
+        <label for="domainInput">Domain / URL</label>
+        <textarea id="domainInput" rows="6" placeholder="Contoh:
+google.com
+example.com
+https://github.com"></textarea>
+      </div>
+
+      <div class="button-row">
+        <button id="checkBtn" class="btn btn-primary">Cek Sekarang</button>
+        <button id="clearBtn" class="btn btn-secondary">Bersihkan</button>
+      </div>
+
+      <div id="loadingBox" class="loading-box hidden">
+        <div class="spinner"></div>
+        <span>Sedang memeriksa status domain...</span>
+      </div>
+
+      <div id="messageBox" class="message-box hidden"></div>
+    </section>
+
+    <section class="card results-card">
+      <div class="card-header">
+        <h2>Hasil Pemeriksaan</h2>
+        <p>Hasil analisis status akses domain / URL.</p>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Domain / URL</th>
+              <th>Status</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody id="resultsBody">
+            <tr class="empty-row">
+              <td colspan="3">Belum ada pemeriksaan dilakukan.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card info-card">
+      <div class="card-header">
+        <h2>Catatan Profesional</h2>
+      </div>
+      <div class="info-grid">
+        <div class="info-item">
+          <h3>Aman / Dapat Diakses</h3>
+          <p>Domain dapat di-resolve dan merespons permintaan web secara normal.</p>
+        </div>
+        <div class="info-item">
+          <h3>Terindikasi Bermasalah</h3>
+          <p>Domain ter-resolve tetapi akses HTTP/HTTPS gagal, timeout, atau respons tidak normal.</p>
+        </div>
+        <div class="info-item">
+          <h3>Error / Tidak Dapat Diakses</h3>
+          <p>Domain tidak dapat di-resolve, salah format, atau tidak memberikan respons.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 PIKAT4D CEK LINK — Professional Link Status Checker</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
